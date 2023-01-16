@@ -34,7 +34,6 @@ export function NoteListPage() {
 // This component will display a list of notes that have been fetched from the server. 
 // It uses the useEffect hook to fetch the notes from the server on component mount. 
 // The component shows the error message if there is any error from the server and it maps through the notes and renders a list item for each note with the title.
-// It's important to note that this is just an example, you would need to adjust the endpoint, the payload, and the format of the response to match your specific requirements and design choices of your application. 
-// Also, you may want to add additional functionality such as the ability to view, add, edit and delete notes, and organize them based on classes, date, labels, and keywords.
-// Also, you may want to add the ability to add attachments (images, documents) to the notes, and the ability to share notes with other colleagues.
-// And it's important to make sure that the user is authenticated before fetching the notes, and also to use HTTPS to secure the communication between the client and the server.
+// to add additional functionality such as the ability to view, add, edit and delete notes, and organize them based on classes, date, labels, and keywords.
+// to add the ability to add attachments (images, documents) to the notes, and the ability to share notes with other colleagues.
+// make sure that the user is authenticated before fetching the notes, and also to use HTTPS to secure the communication between the client and the server.

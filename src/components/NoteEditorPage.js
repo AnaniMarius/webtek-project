@@ -64,6 +64,5 @@ export function NoteEditorPage({ match }) {
 
 // This component will handle the functionality of creating and editing a note. It uses the `useEffect` hook to fetch a note from the server when the component mounts and the id of the note is passed in the `match.params.id` props. The component uses the `fetch` API to send a request to the server with the payload of the note, it would handle the response of the server and it will handle the error if the request failed.
 // It also uses the `match.params.id` to check if the user is creating a new note or editing an existing note. If there's an id it means that the user is editing a note, it will send a PUT request to the server, otherwise, it will send a POST request.
-// It's important to note that this is just an example, you would need to adjust the endpoint, the payload, and the format of the response to match your specific requirements and design choices of your application. 
-// It's important to make sure that the user is authenticated before sending a request to the server and also to use HTTPS to secure the communication between the client and the server.
-// You may also want to add the ability to add attachments (images, documents) to the notes, and the ability to format the text using markdown.
+// make sure that the user is authenticated before sending a request to the server and also to use HTTPS to secure the communication between the client and the server.
+// want to add the ability to add attachments (images, documents) to the notes, and the ability to format the text using markdown.
