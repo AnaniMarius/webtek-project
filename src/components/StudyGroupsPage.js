@@ -4,8 +4,16 @@ import { Dropdown } from 'semantic-ui-react';
 import './StudyGroupsPage.css';
 
 export function StudyGroupsPage() {
-    const [studyGroups, setStudyGroups] = useState([]);
+    // const [studyGroups, setStudyGroups] = useState([]);
     const [selectedGroup, setSelectedGroup] = useState(null);
+
+    //dummy data
+    const [studyGroups, setStudyGroups] = useState([
+        { id: 1, inviterEmail: 'admin1@stud.ase.ro', resources: [{ id: 1, name: 'Resource 1' }, { id: 2, name: 'Resource 1' }] },
+        { id: 2, inviterEmail: 'admin2@stud.ase.ro', resources: [{ id: 3, name: 'Resource 2' }, { id: 4, name: 'Resource 2' }] },
+        { id: 3, inviterEmail: 'admin3@stud.ase.ro', resources: [{ id: 5, name: 'Resource 3' }, { id: 6, name: 'Resource 3' }] },
+        { id: 4, inviterEmail: 'admin4@stud.ase.ro', resources: [{ id: 7, name: 'Resource 4' }, { id: 8, name: 'Resource 4' }] }
+    ]);
 
     useEffect(() => {
         // fetch list of study groups from the server

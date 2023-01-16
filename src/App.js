@@ -13,7 +13,7 @@ import { StudyGroupPage } from './components/StudyGroupPage';
 import { StudyGroupsPage } from './components/StudyGroupsPage';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [selectedNote, setSelectedNote] = useState(null);
 
   function handleLogin(username, password) {
