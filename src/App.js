@@ -44,19 +44,26 @@ function App() {
         )}
 
         <Routes>
-          <Route path="/login">
+          {/* <Route path="login">
             <LoginPage onLogin={handleLogin} />
-          </Route>
-          <Route path="/">
+          </Route> */}
+          <Route path="login" element={<LoginPage onLogin={handleLogin} />} />
+          {/* <Route path="/">
             <NoteListPage
               selectedNote={selectedNote}
               onSelectNote={handleSelectNote}
               onAddNote={() => setSelectedNote({})}
             />
-          </Route>
-          <Route path="/study-group">
+          </Route> */}
+          <Route path="/" element={<NoteListPage
+            selectedNote={selectedNote}
+            onSelectNote={handleSelectNote}
+            onAddNote={() => setSelectedNote({})}
+          />} />
+          {/* <Route path="/study-group">
             <StudyGroupPage />
-          </Route>
+          </Route> */}
+          <Route path="/study-group" element={<StudyGroupPage />} />
         </Routes>
         {selectedNote && (
           <NoteEditorPage
